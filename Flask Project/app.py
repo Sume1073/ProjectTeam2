@@ -170,4 +170,4 @@ def submit_form():
 # When the form is submitted, the data is extracted from the request.form dictionary and stored in an SQLite database using the sqlite3 module. If the data is successfully stored, the user is redirected back to the form page with a success message using the Flask flash() function. The success message is displayed on the HTML page using the Flask get_flashed_messages() function.
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0",debug=True)
